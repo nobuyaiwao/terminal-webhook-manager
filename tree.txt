@@ -1,0 +1,16 @@
+project-root/
+├── cli/                          # CLI用スクリプト群
+│   └── manageTerminalWebhook.js # メインのCLIエントリ
+├── config.js                    # 環境変数読込と共通設定
+├── services/                   
+│   ├── adyenService.js          # Adyen Management API通信用
+│   └── herokuService.js         # Herokuへのデプロイ確認/URL取得など
+├── utils/                      
+│   └── terminalUtils.js         # Terminal選択などの補助関数
+├── listener/                   
+│   └── index.js                 # 実際にHerokuにデプロイされる受信サーバー
+├── .env                         # 環境変数ファイル（ADYEN_API_KEYなど）
+├── Procfile                     # Heroku用設定
+├── package.json
+└── README.md
+
